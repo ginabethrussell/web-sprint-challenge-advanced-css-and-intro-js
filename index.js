@@ -387,7 +387,6 @@ console.log(getHTML(artists));
 
 function randomize(data){
     let randomArray = [];
-    /* Code here */
     let tempArr = [...data];
     while (tempArr.length > 0){
       let randomIndex = Math.floor(Math.random()* tempArr.length);
@@ -395,7 +394,6 @@ function randomize(data){
       tempArr.splice(randomIndex, 1);
     }
     console.log(randomArray);
-
   }
 
 randomize(artists);
