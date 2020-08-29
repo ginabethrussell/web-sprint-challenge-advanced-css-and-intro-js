@@ -394,9 +394,10 @@ function randomize(data){
       tempArr.splice(randomIndex, 1);
     }
     console.log(randomArray);
+    return randomArray;
   }
 
-randomize(artists);
+const randomizedArtists = randomize(artists);
 console.log(artists);
 
  /* STRETCH 3: Use advanced array methods (.map, .reduce, .filer) to refactor your MVP code (create an array of all artists born in the 1900s with .filter, for example) */
