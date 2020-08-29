@@ -134,3 +134,13 @@ button:hover{
 .artist img{
     width:100%;
 }
+
+/* Responsive Styles at 500px */
+@media screen and (max-width: 500px){
+    nav {
+        width: 55%;
+    }
+    .title-container div {
+        width: 100%;
+    }
+}
