@@ -140,7 +140,22 @@ button:hover{
     nav {
         width: 55%;
     }
+    .title-container hr {
+        width: 100%;
+    }
     .title-container div {
         width: 100%;
+    }
+    .artists-container{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+    }
+    .artist { 
+        width: 60%;
+    }
+    .artist img {
+        height: 200px;
     }
 }
