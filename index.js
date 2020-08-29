@@ -346,12 +346,42 @@ The function should console.log 50 chunks of HTML code that match the structure 
 
 ‼️ You do **NOT** need to get these to display on your page, but you can copy and paste the result into your HTML file if you'd like to see what that would look like. */
 
-function getHTML(/* Code here */){
+function getHTML(data){
 
-    /* Code here */
+  for (let i = 0; i < data.length; i++ ){
+    //starter html
+    let artistHTML = `
+    <div id="artist">
+      <div class="image">
+        <img src=""/>
+      </div>`;
+    // get name and underscore name for html
+    let name = data[i].name;
+    let underscoreName = data[i].name.split(" ").join('_');
+   
+    // create html tags
+    let nameLinkHTML = `
+      <div class = "name">
+        <a href="https://en.wikipedia.org/wiki/${underscoreName}"> ${name}</a>
+      </div>`;
 
+    artistHTML += nameLinkHTML;
+
+    // get bio
+    let bio = data[i].bio;
+    // create tags
+    let bioHTML = `
+      <div class = "bio">${bio}</div>
+      </div>`;
+
+    artistHTML += bioHTML;
+
+    console.log(artistHTML);
+    
   }
 
+  }
+console.log(getHTML(artists));
 
 /* STRETCH 2: Create a function called `randomize` that takes a data array as an argument and returns a the same array in a randomized order. */
 
