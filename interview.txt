@@ -1,0 +1,23 @@
+1. How would you describe accessibility ...?
+Accessibility is the idea that the things we create should be equally available to everyone. 
+For example, the vision impaired and blind should still be able to access and use our sites. 
+
+2. Three different things that help make websites more accessible are
+    a. proper color contrast to make text readable for the visually impaired
+    b. alt text indicating the content of all images for the blind or others who use screen readers
+    view our page
+    c. avoid hard coding font-sizes in pixels which prevent users from adjusting the fonts
+    with their browser settings
+    Other techniques include making sure users can tab through our text with a keyboard,
+    and using semantic html to make content understandable
+
+3. A variable is a way we can reference data to store and reuse in our programs. This data 
+is stored in the computer's memory and is accessible to us by using the identifier name.
+Depending on the data type, the variable name may reference the data directly, like with a number, 
+or as with arrays and object may reference the location in memory where the data begins.
+
+4. The purpose of functions in code is so we can store references to blocks of code we may
+want to use repeatedly without having to type the code each time we use it. This follows the
+programming philosophy DRY, don't repeat yourself. Functions are also a great way to group tasks/commands 
+that do something specific for us. 
+
