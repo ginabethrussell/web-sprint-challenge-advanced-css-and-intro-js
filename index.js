@@ -272,9 +272,8 @@ console.log(get20s(artists));
 function removeArtist(array, index) {
     array.splice(index, 1);
     return(array.length);
-  }
-  
- console.log(removeArtist(artists, 0));
+  } 
+//  console.log(removeArtist(artists, 0));
 
 /**
 /* Task 6: Create a function called `addArtist` that can accept an object of information and add it to the artists array. Then, add a 21st artist to the array (you) with custom information!👩‍🎨👨‍🎨
@@ -289,11 +288,21 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 
 At the end, this function should return the new array with information added"*/
 
-function addArtist(/* Code here */){
+function addArtist(array, newObject){
+  array.push(newObject);
+  return array;
+}
+  
+const grussArtist = {
+  "id": 20,
+  "name": "Gina Russell", 
+  "years": "1969 - Present",
+  "genre": "Web Design", 
+  "nationality": "United States Citizen",
+  "bio": "Gina Russell is an enthusiastic learner who is channeling her latest creative energies toward building beautiful, minimalist websites. You can see her work at her github site."
+};
+console.log(addArtist(artists, grussArtist));
 
-    /* Code here */
-
-  }
 
 /* Task 7: Create a function called lotsOfArt() that takes one argument: 
 
